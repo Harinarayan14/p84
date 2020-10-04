@@ -50,8 +50,8 @@ export default class SwipeableFlatlist extends Component{
      renderItem = data => (
         <TouchableHighlight>
         <ListItem
-       leftElement={<Icon name="book" type="font-awesome" color ='#696969'/>}
-       title={data.item.book_name}
+       leftElement={<Icon name="item" type="font-awesome" color ='#696969'/>}
+       title={data.item.item_name}
        titleStyle={{ color: 'black', fontWeight: 'bold' }}
        subtitle={data.item.message}
        bottomDivider

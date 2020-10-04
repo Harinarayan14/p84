@@ -10,7 +10,6 @@ import {
     Alert,
     ScrollView} from 'react-native';
 
-import SantaAnimation from '../components/SantaClaus.js';
 import db from '../config';
 import firebase from 'firebase';
 
@@ -53,7 +52,6 @@ export default class WelcomeScreen extends Component{
         );
      })
      .catch((error)=> {
-       // Handle Errors here.
        var errorCode = error.code;
        var errorMessage = error.message;
        return Alert.alert(errorMessage)
@@ -189,8 +187,7 @@ showModal = ()=>{
             this.showModal()
           }
         <View style={{justifyContent:'center', alignItems:'center'}}>
-          { /*<SantaAnimation/>*/}
-          <Text style={styles.title}>Book Santa</Text>
+          <Text style={styles.title}>Barter System</Text>
         </View>
         <View>
             <TextInput
@@ -237,7 +234,7 @@ showModal = ()=>{
 const styles = StyleSheet.create({
   container:{
    flex:1,
-   backgroundColor:'#F8BE85',
+   backgroundColor:'#ff11bb',
    alignItems: 'center',
    justifyContent: 'center'
  },
@@ -250,13 +247,13 @@ const styles = StyleSheet.create({
    fontSize:65,
    fontWeight:'300',
    paddingBottom:30,
-   color : '#ff3d00'
+   color : '#11ff99'
  },
  loginBox:{
    width: 300,
    height: 40,
    borderBottomWidth: 1.5,
-   borderColor : '#ff8a65',
+   borderColor : '#112211',
    fontSize: 20,
    margin:10,
    paddingLeft:10
@@ -270,7 +267,7 @@ const styles = StyleSheet.create({
    justifyContent:'center',
    alignSelf:'center',
    fontSize:30,
-   color:'#ff5722',
+   color:'#ff11ff',
    margin:50
  },
  modalContainer:{
@@ -278,7 +275,7 @@ const styles = StyleSheet.create({
    borderRadius:20,
    justifyContent:'center',
    alignItems:'center',
-   backgroundColor:"#ffff",
+   backgroundColor:"#f0f0f0",
    marginRight:30,
    marginLeft : 30,
    marginTop:80,
@@ -288,7 +285,7 @@ const styles = StyleSheet.create({
    width:"75%",
    height:35,
    alignSelf:'center',
-   borderColor:'#ffab91',
+   borderColor:'#abcdef',
    borderRadius:10,
    borderWidth:1,
    marginTop:20,
@@ -304,7 +301,7 @@ const styles = StyleSheet.create({
    marginTop:30
  },
  registerButtonText:{
-   color:'#ff5722',
+   color:'#123456',
    fontSize:15,
    fontWeight:'bold'
  },
@@ -322,8 +319,8 @@ const styles = StyleSheet.create({
    justifyContent:'center',
    alignItems:'center',
    borderRadius:25,
-   backgroundColor:"#ff9800",
-   shadowColor: "#000",
+   backgroundColor:"#ffeedd",
+   shadowColor: "#111111",
    shadowOffset: {
       width: 0,
       height: 8,
@@ -334,7 +331,7 @@ const styles = StyleSheet.create({
    padding: 10
  },
  buttonText:{
-   color:'#ffff',
+   color:'#ffff00',
    fontWeight:'200',
    fontSize:20
  }
